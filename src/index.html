@@ -1,14 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>CarRacingApp</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Racing Schedule</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/normalize.css">
+        <link rel="stylesheet" href="assets/main.css">
+        <!-- build:vendor -->
+        <script>
+          System.import('app')
+          .catch(function(err){
+              console.error(err);});
+        </script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="systemjs.config.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <racing-app>Reticulating Splines...</my-app>
+        <!-- build:app -->
+        <script>
+        System.import('app/vendor').then(function(){
+          System.import('app').catch(function(err){ console.error(err); });
+        });
+        </script>
+        <!-- endbuild -->
+    </body>
 </html>

@@ -1,10 +1,15 @@
+// this file contains our page header
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // the css selector for the HTML element where we want the component to load
+  selector: 'racing-app',
+  // the content we want to load inside our selector
+  template: `
+  <h1>{{ heading }}</h1>
+  <races></races>
+  `
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Ultra Racing Schedule';
 }
