@@ -9,14 +9,16 @@ import { RACES } from './mocks';
     templateUrl: './races.component.html!text'
 })
 export class RacesComponent {
-  races: Race[] = [];
+  heading = 'Ultra Racing Schedule';
+  races: Race[];
   cash = 10000;
 
   constructor(private racingDataService: RaceService) { }
 
+// invoked after the component is constructed and is the best place to initialize property values
   ngOnInit() {
       this.racingDataService.getRaces()
-        .subscribe(races => this.races = races);
+        .subscribe(data => this.races = data);
   }
 
   totalCost() {
@@ -26,6 +28,10 @@ export class RacesComponent {
             .reduce((prev, next) => prev + next.entryFee, 0);
     }
   }
+
+  castDate(date) {
+    return new Date(date);
+}
 
   cashLeft() {
     return this.cash - this.totalCost();
