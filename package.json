@@ -1,6 +1,7 @@
 {
   "name": "car-racing-app",
   "version": "0.0.0",
+  "main": "index.html",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -23,7 +24,6 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "systemjs": "^0.21.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

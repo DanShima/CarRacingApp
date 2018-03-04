@@ -4,9 +4,9 @@ import { RaceService } from './race.service';
 import { RACES } from './mocks';
 
 @Component({
-    selector: 'races',
-    styleUrls: ['./races.component.css'],
-    templateUrl: './races.component.html!text'
+    selector: 'my-races',
+    templateUrl: './races.component.html',
+    styleUrls: [ './races.component.css']
 })
 export class RacesComponent {
   heading = 'Ultra Racing Schedule';

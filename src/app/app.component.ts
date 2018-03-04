@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   selector: 'racing-app',
   // the content we want to load inside our selector
   template: `
+  <header class="container">
   <h1>{{ heading }}</h1>
-  <races></races>
+  </header>
+  <my-races></my-races>
   `
 })
 export class AppComponent {
