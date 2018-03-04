@@ -1,6 +1,6 @@
 # CarRacingApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2. I made it by watching and doing exercises in CodeSchool's Accelerating through Angular course.
 
 ## Development server
 
